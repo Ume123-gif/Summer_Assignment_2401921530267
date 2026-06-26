@@ -11,7 +11,6 @@ public:
         if (close < open)
             generate(current + ")", open, close + 1, n);
     }
-
     vector<string> generateParenthesis(int n) {
         generate("", 0, 0, n);
         return result;
